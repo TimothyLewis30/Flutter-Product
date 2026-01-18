@@ -20,44 +20,7 @@ Aplikasi mobile sederhana menggunakan Flutter dan GetX state management yang men
 - **HTTP** (v1.2.0) - REST API client
 - **DummyJSON API** - Mock data source
 
-## Cara Menjalankan
 
-### 1. Install Flutter
-
-Jika belum install Flutter, download dari:
-https://docs.flutter.dev/get-started/install/windows
-
-Pastikan Flutter sudah terdaftar di PATH system.
-
-### 2. Verifikasi Instalasi
-
-```bash
-flutter doctor
-```
-
-### 3. Install Dependencies
-
-```bash
-cd "c:/Coding/Anti Gravity/flutter-getX"
-flutter pub get
-```
-
-### 4. Jalankan Aplikasi
-
-Untuk Android emulator atau device:
-```bash
-flutter run
-```
-
-Untuk Chrome (web):
-```bash
-flutter run -d chrome
-```
-
-Untuk Windows desktop:
-```bash
-flutter run -d windows
-```
 
 ## Struktur Project
 
