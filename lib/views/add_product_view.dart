@@ -18,7 +18,8 @@ class _AddProductViewState extends State<AddProductView> {
   final TextEditingController v_priceController       = TextEditingController();
   final TextEditingController v_categoryController    = TextEditingController();
   final TextEditingController v_brandController       = TextEditingController();
-
+  String? v_selectedCategory;
+  
   @override
   void dispose() {
     v_titleController.dispose();
@@ -145,8 +146,6 @@ class _AddProductViewState extends State<AddProductView> {
                     const SizedBox(height: 16),
                     
                     // Category field
-                    String? v_selectedCategory;
-
                   DropdownButtonFormField<String>(
                     value: v_selectedCategory,
                     decoration: InputDecoration(
@@ -169,6 +168,18 @@ class _AddProductViewState extends State<AddProductView> {
                       DropdownMenuItem(
                         value: 'food',
                         child: Text('Food'),
+                      ),
+                      DropdownMenuItem(
+                        value: 'Beverages',
+                        child: Text('Beverages'),
+                      ),
+                      DropdownMenuItem(
+                        value: 'Skincare',
+                        child: Text('Skincare'),
+                      ),
+                      DropdownMenuItem(
+                        value: 'Toys',
+                        child: Text('Toys'),
                       ),
                     ],
                     onChanged: (value) {
