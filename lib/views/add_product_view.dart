@@ -146,6 +146,7 @@ class _AddProductViewState extends State<AddProductView> {
                     const SizedBox(height: 16),
                     
                     // Category field
+                    // Category dropdown nembak
                   DropdownButtonFormField<String>(
                     value: v_selectedCategory,
                     decoration: InputDecoration(
